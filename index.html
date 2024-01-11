@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Proposal Website</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Will You Be My...</h1>
+    <div class="heart-container">
+      <div class="heart">&lt;3</div>
+    </div>
+    <button onclick="showMessage()">Crush?</button>
+    <p id="hiddenMessage" class="hidden">I have a huge crush on you, and I would love it if you would be my special someone. What do you say?</p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f7f7f7;
+}
+
+.container {
+  text-align: center;
+}
+
+.heart-container {
+  margin: 20px;
+}
+
+.heart {
+  font-size: 3em;
+  color: red;
+  animation: heartbeat 1s infinite;
+}
+
+@keyframes heartbeat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1.2em;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.hidden {
+  display: none;
+  margin-top: 20px;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Proposal Website</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Will You Be My...</h1>
+    <div class="heart-container">
+      <div class="heart">&lt;3</div>
+    </div>
+    <button onclick="showMessage()">Crush?</button>
+    <p id="hiddenMessage" class="hidden">I have a huge crush on you, and I would love it if you would be my special someone. What do you say?</p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f7f7f7;
+}
+
+.container {
+  text-align: center;
+}
+
+.heart-container {
+  margin: 20px;
+}
+
+.heart {
+  font-size: 3em;
+  color: red;
+  animation: heartbeat 1s infinite;
+}
+
+@keyframes heartbeat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1.2em;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.hidden {
+  display: none;
+  margin-top: 20px;
+}
+function showMessage() {
+  const message = document.getElementById('hiddenMessage');
+  message.style.display = 'block';
+}
